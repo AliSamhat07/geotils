@@ -8,6 +8,8 @@ build:
     pre_build:
       - sphinx-apidoc -o ./docs/source ./geotils
       - dir
+    post_build:
+      - ./docs/make html
 
 python:
   install:
