@@ -25,7 +25,7 @@ extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc', 's
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'pages/reference-architecture', 'some/other/file.txt']
-autodoc_mock_imports = ['ToBeChecked', 'Dataset', 'fcntl', 'yacs']
+autodoc_mock_imports = ['ToBeChecked', 'Dataset', 'fcntl', 'yacs','skimage', 'rasterio', 'tqdm', 'matplotlib', 'sklearn', 'geopandas', 'pandas', 'numpy', 'torch', 'yaml']
 
 
 
@@ -34,3 +34,4 @@ autodoc_mock_imports = ['ToBeChecked', 'Dataset', 'fcntl', 'yacs']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
