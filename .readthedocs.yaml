@@ -9,7 +9,7 @@ build:
       - sphinx-apidoc -o ./docs/source ./geotils
       - dir
     post_build:
-      - ./docs/make html
+      - ./docs/make.bat html
 
 python:
   install:
