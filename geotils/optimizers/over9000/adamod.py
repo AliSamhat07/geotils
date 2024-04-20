@@ -4,18 +4,18 @@ import torch
 from torch.optim import Optimizer
 
 class AdaMod(Optimizer):
-    """Implements AdaMod algorithm with Decoupled Weight Decay (arxiv.org/abs/1711.05101)
+    r"""Implements AdaMod algorithm with Decoupled Weight Decay (arxiv.org/abs/1711.05101)
     It has been proposed in `Adaptive and Momental Bounds for Adaptive Learning Rate Methods`_.
-    Parameters:
-        params (iterable): iterable of parameters to optimize or dicts defining
-            parameter groups
-        lr (float, optional): learning rate (default: 1e-3)
-        betas (Tuple[float, float], optional): coefficients used for computing
-            running averages of gradient and its square (default: (0.9, 0.999))
-        beta3 (float, optional): smoothing coefficient for adaptive learning rates (default: 0.9999)
-        eps (float, optional): term added to the denominator to improve
-            numerical stability (default: 1e-8)
-        weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
+        Parameters:
+            params (iterable): iterable of parameters to optimize or dicts defining
+                parameter groups
+            lr (float, optional): learning rate (default: 1e-3)
+            betas (Tuple[float, float], optional): coefficients used for computing
+                running averages of gradient and its square (default: (0.9, 0.999))
+            beta3 (float, optional): smoothing coefficient for adaptive learning rates (default: 0.9999)
+            eps (float, optional): term added to the denominator to improve
+                numerical stability (default: 1e-8)
+            weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
     """
 
     def __init__(self, params, lr=1e-3, betas=(0.9, 0.999), beta3=0.999,
@@ -38,7 +38,7 @@ class AdaMod(Optimizer):
         super(AdaMod, self).__setstate__(state)
 
     def step(self, closure=None):
-        """Performs a single optimization step.
+        r"""Performs a single optimization step.
         Parameters:
             closure (callable, optional): A closure that reevaluates the model
                 and returns the loss.
