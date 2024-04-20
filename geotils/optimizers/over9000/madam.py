@@ -14,7 +14,7 @@ class Madam(Optimizer):
 
     def step(self, closure=None):
         """Performs a single optimization step.
-        Arguments:
+        Parameters:
             closure (callable, optional): A closure that reevaluates the model
                 and returns the loss.
         """

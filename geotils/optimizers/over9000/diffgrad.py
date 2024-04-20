@@ -13,7 +13,7 @@ import torch.nn as nn
 class DiffGrad(Optimizer):
     r"""Implements diffGrad algorithm. It is modified from the pytorch implementation of Adam.
     It has been proposed in `diffGrad: An Optimization Method for Convolutional Neural Networks`_.
-    Arguments:
+    Parameters:
         params (iterable): iterable of parameters to optimize or dicts defining
             parameter groups
         lr (float, optional): learning rate (default: 1e-3)
@@ -56,7 +56,7 @@ class DiffGrad(Optimizer):
 
     def step(self, closure=None):
         """Performs a single optimization step.
-        Arguments:
+        Parameters:
             closure (callable, optional): A closure that reevaluates the model
                 and returns the loss.
         """

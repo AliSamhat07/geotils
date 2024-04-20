@@ -9,7 +9,7 @@ version_higher = ( torch.__version__ >= "1.5.0" )
 
 class AdaBelief(Optimizer):
     r"""Implements AdaBelief algorithm. Modified from Adam in PyTorch
-    Arguments:
+    Parameters:
         params (iterable): iterable of parameters to optimize or dicts defining
             parameter groups
         lr (float, optional): learning rate (default: 1e-3)
@@ -117,7 +117,7 @@ class AdaBelief(Optimizer):
 
     def step(self, closure=None):
         """Performs a single optimization step.
-        Arguments:
+        Parameters:
             closure (callable, optional): A closure that reevaluates the model
                 and returns the loss.
         """

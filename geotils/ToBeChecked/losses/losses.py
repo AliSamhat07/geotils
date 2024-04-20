@@ -15,7 +15,7 @@ from segmentation_models_pytorch.losses import DiceLoss,SoftBCEWithLogitsLoss
 def _neg_loss(pred, gt):
   ''' Modified focal loss. Exactly the same as CornerNet.
       Runs faster and costs a little bit more memory
-    Arguments:
+    Parameters:
       pred (batch x c x h x w)
       gt_regr (batch x c x h x w)
   '''
@@ -49,7 +49,7 @@ def _neg_loss(pred, gt):
 
 def _soft_neg_loss(pred, gt,eps=0.2):
   ''' Modified focal loss to soft focal loss for noisy labels :)
-    Arguments:
+    Parameters:
       pred (batch x c x h x w)
       gt_regr (batch x c x h x w)
   '''

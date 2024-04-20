@@ -30,7 +30,7 @@ class Lamb(Optimizer):
 
     It has been proposed in `Large Batch Optimization for Deep Learning: Training BERT in 76 minutes`_.
 
-    Arguments:
+    Parameters:
         params (iterable): iterable of parameters to optimize or dicts defining
             parameter groups
         lr (float, optional): learning rate (default: 1e-3)
@@ -64,7 +64,7 @@ class Lamb(Optimizer):
     def step(self, closure=None):
         """Performs a single optimization step.
 
-        Arguments:
+        Parameters:
             closure (callable, optional): A closure that reevaluates the model
                 and returns the loss.
         """

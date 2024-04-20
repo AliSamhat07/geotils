@@ -6,7 +6,7 @@ from torch.optim import Optimizer
 class AdaMod(Optimizer):
     """Implements AdaMod algorithm with Decoupled Weight Decay (arxiv.org/abs/1711.05101)
     It has been proposed in `Adaptive and Momental Bounds for Adaptive Learning Rate Methods`_.
-    Arguments:
+    Parameters:
         params (iterable): iterable of parameters to optimize or dicts defining
             parameter groups
         lr (float, optional): learning rate (default: 1e-3)
@@ -39,7 +39,7 @@ class AdaMod(Optimizer):
 
     def step(self, closure=None):
         """Performs a single optimization step.
-        Arguments:
+        Parameters:
             closure (callable, optional): A closure that reevaluates the model
                 and returns the loss.
         """

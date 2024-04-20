@@ -147,7 +147,7 @@ def calculate_matching_iou(iou_GDF, proposal_row, ground_truth_gdf, prediction_c
     """
     Calculate the matching IoU for a single proposal against ground truth.
 
-    Arguments:
+    Parameters:
     -----------
     iou_GDF : GeoDataFrame
         GeoDataFrame containing IoU scores.
@@ -182,7 +182,7 @@ def process_object_category(proposal_gdf, object_category, gt_cat_attrib, confid
     """
     Process each object category for IoU and confidence score accumulation.
 
-    Arguments:
+    Parameters:
     -----------
     proposal_gdf : GeoDataFrame
         The GeoDataFrame containing proposal polygons.
