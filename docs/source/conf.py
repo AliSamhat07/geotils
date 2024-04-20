@@ -25,7 +25,8 @@ extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc', 's
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'pages/reference-architecture', 'some/other/file.txt']
-autodoc_mock_imports = ['cv2', 'torchvision', 'color_map', 'shapely', 'PIL', 'tabulate', 'ToBeChecked', 'Dataset', 'fcntl', 'yacs','skimage', 'rasterio', 'tqdm', 'matplotlib', 'sklearn', 'geopandas', 'pandas', 'numpy', 'torch', 'yaml']
+autodoc_mock_imports = ['cv2','imantics', 'simplification', 'mercantile', 'colorama', 'albumentations', 'torchvision', 'color_map', 'shapely', 'PIL', 'tabulate', 'ToBeChecked', 'Dataset', 'fcntl', 'yacs','skimage', 'rasterio', 'tqdm', 'matplotlib', 'sklearn', 'geopandas', 'pandas', 'numpy', 'torch', 'yaml']
+
 
 
 
