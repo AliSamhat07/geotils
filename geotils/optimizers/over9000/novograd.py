@@ -22,6 +22,7 @@ class AdamW(Optimizer):
     It has been proposed in `Adam: A Method for Stochastic Optimization`_.
   
     Attributes:
+    -----------
         params (iterable): iterable of parameters to optimize or dicts defining
             parameter groups
         lr (float, optional): learning rate (default: 1e-3)

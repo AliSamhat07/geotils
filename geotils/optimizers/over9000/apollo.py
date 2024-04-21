@@ -7,6 +7,7 @@ class Apollo(Optimizer):
     r"""Implements Atom algorithm.
 
         Attributes:
+    -----------
             params (iterable): iterable of parameters to optimize or dicts defining
                 parameter groups
             lr (float): learning rate
