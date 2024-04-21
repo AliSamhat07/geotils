@@ -6,7 +6,7 @@ from torch.optim.optimizer import Optimizer
 class Apollo(Optimizer):
     r"""Implements Atom algorithm.
 
-        Parameters:
+        Attributes:
             params (iterable): iterable of parameters to optimize or dicts defining
                 parameter groups
             lr (float): learning rate

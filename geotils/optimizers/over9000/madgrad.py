@@ -34,7 +34,7 @@ class MADGRAD(torch.optim.Optimizer):
 
     On sparse problems both weight_decay and momentum should be set to 0.
 
-    Parameters:
+    Attributes:
         params (iterable): 
             Iterable of parameters to optimize or dicts defining parameter groups.
         lr (float): 
