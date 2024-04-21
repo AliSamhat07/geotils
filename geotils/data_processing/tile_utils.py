@@ -14,24 +14,18 @@ from supermercado.burntiles import burn
 from tqdm import tqdm,trange
 from math import ceil
 from pystac import (Catalog)
-import argparse
-from tqdm import trange,tqdm
 import geopandas as gp
 from shapely.geometry import Polygon
-from rasterio.coords import BoundingBox
 from rasterio import windows
-from rasterio import warp
+from rasterio.windows import Window
 from rasterio.transform import from_bounds
 from PIL import Image,ImageDraw
 from skimage.morphology import dilation, square
 from skimage.segmentation import watershed
 # import solaris as sol
-from simplification.cutil import simplify_coords_vwp
 from imantics import Mask
 import numpy as np
 import rasterio
-from matplotlib import pyplot as plt
-from rasterio.windows import Window
 from typing import List, Tuple
 
 global our_crs

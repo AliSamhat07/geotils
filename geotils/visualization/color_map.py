@@ -520,4 +520,4 @@ cm_data = [
 cm_data = array(cm_data)
 #remove close white colors
 cm_data_std = cm_data.std(axis=-1)
-cm_data = cm_data[cm_data_std >= 0.11,:]
+cm_data = cm_data[float(cm_data_std) >= 0.11,:]
