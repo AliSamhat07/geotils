@@ -38,7 +38,6 @@ class TorchRandomRotate(nn.Module):
     different degrees to each element instead of rotating all images in batch by the same degree.
 
     Attributes:
-    -----------
         degrees (tuple or list): Range of possible rotation angles.
         probability (float, default=1): Probability of applying the rotation.
         interpolation (InterpolationMode, default=BILINEAR): Interpolation mode for rotation.
@@ -120,7 +119,6 @@ class RandomMaskIgnore(nn.Module):
     It modifies the input mask tensor in-place, and the modified tensor is returned.
 
     Attributes:
-    -----------
         min_length (int, default=50): Minimum length of the randomly generated bounding box.
         max_length (int, default=100): Maximum length of the randomly generated bounding box.
         proba (float, default=0.5): Probability of applying the random mask modification.

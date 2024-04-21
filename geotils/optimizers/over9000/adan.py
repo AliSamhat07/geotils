@@ -29,7 +29,6 @@ class Adan(Optimizer):
     Adan: Adaptive Nesterov Momentum Algorithm for Faster Optimizing Deep Models[J]. arXiv preprint arXiv:2208.06677, 2022.
     https://arxiv.org/abs/2208.06677
     Attributes:
-    -----------
         params (iterable): iterable of parameters to optimize or dicts defining parameter groups.
         lr (float, optional): learning rate. (default: 1e-3)
         betas (Tuple[float, float, flot], optional): coefficients used for computing 

@@ -6,7 +6,6 @@ class AdamW(Optimizer):
     """Implements AdamW algorithm.
     It has been proposed in `Fixing Weight Decay Regularization in Adam`_.
     Attributes:
-    -----------
         params (iterable): iterable of parameters to optimize or dicts defining
             parameter groups
         lr (float, optional): learning rate (default: 1e-3)
