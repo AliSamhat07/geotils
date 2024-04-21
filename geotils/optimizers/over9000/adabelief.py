@@ -7,8 +7,7 @@ from colorama import Fore, Back, Style
 from packaging import version 
 
 if torch.__version__:
-    torch_version = version.parse(str(torch.__version__))
-    version_higher = ( torch_version >= version.parse("1.5.0"))
+    version_higher = ( version.parse(torch.__version__) >= version.parse("1.5.0"))
 
 class AdaBelief(Optimizer):
     r"""Implements AdaBelief algorithm. Modified from Adam in PyTorch
