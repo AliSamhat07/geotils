@@ -6,9 +6,9 @@ from tabulate import tabulate
 from colorama import Fore, Back, Style
 from packaging import version 
 
-torch_version = version.parse(str(torch.__version__))
-print(torch_version)
-version_higher = ( torch_version >= version.parse("1.5.0"))
+if torch.__version__:
+    torch_version = version.parse(str(torch.__version__))
+    version_higher = ( torch_version >= version.parse("1.5.0"))
 
 class AdaBelief(Optimizer):
     r"""Implements AdaBelief algorithm. Modified from Adam in PyTorch
