@@ -7,7 +7,6 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   geotils.ToBeChecked
    geotils.data_processing
    geotils.dataset
    geotils.logging

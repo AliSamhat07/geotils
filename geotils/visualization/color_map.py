@@ -1,5 +1,7 @@
 
 from numpy import array
+import numpy
+
 cm_data = [
            [ 0.95588623, 0.91961077, 0.95812116],
            [ 0.94967876, 0.91615763, 0.95315546],
@@ -517,7 +519,23 @@ cm_data = [
 
 
 
+
+
+
+cm_data = array(cm_data)
+cm_data_std = cm_data.std(axis=-1)
+
+
+"""
 cm_data = array(cm_data)
 #remove close white colors
 cm_data_std = cm_data.std(axis=-1)
-cm_data = cm_data[float(cm_data_std) >= 0.11,:]
+print('Here: ',cm_data_std)
+# float_cmd_data_std = cm_data_std.astype(float)
+# print('Here2: ', float_cmd_data_std)
+"""
+
+res = numpy.std(cm_data)
+print("here: ", res)
+
+cm_data = cm_data[res >= 0.11,:]

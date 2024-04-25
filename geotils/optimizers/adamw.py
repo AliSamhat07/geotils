@@ -26,9 +26,10 @@ class AdamW(Optimizer):
 
     def step(self, closure=None):
         """Performs a single optimization step.
-        Parameters:
-            closure (callable, optional): A closure that reevaluates the model
-                and returns the loss.
+        Parameters
+        ----------
+        closure (callable, optional): A closure that reevaluates the model
+            and returns the loss.
         """
         loss = None
         if closure is not None:
