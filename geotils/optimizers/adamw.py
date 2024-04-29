@@ -14,8 +14,8 @@ class AdamW(Optimizer):
         eps (float, optional): term added to the denominator to improve
             numerical stability (default: 1e-8)
         weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
-    .. Fixing Weight Decay Regularization in Adam:
-    https://arxiv.org/abs/1711.05101
+    
+    Fixing Weight Decay Regularization in Adam: https://arxiv.org/abs/1711.05101
     """
 
     def __init__(self, params, lr=1e-3, betas=(0.9, 0.999), eps=1e-8,
