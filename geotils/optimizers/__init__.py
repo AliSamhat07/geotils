@@ -39,7 +39,7 @@ def get_optimizer(name:str ,params,lookAhead=False,lookAhead_alpha=0.5, lookAhea
         name of the optimzer
     params: list or dict
         parameters of the model that need to be optimzed 
-    *args & **kwargs:
+    args & kwargs:
         parameters for the optimizer
 
     Returns
