@@ -47,8 +47,7 @@ scheduler_mapping = {
 
 
 def get_scheduler(name :str, optimizer :torch.optim.Optimizer, **kwargs) -> LRScheduler:
-    """
-    This function returns the scheduler given its name
+    r"""This function returns the scheduler given its name
 
     Parameters
     ----------
@@ -56,7 +55,7 @@ def get_scheduler(name :str, optimizer :torch.optim.Optimizer, **kwargs) -> LRSc
         name of the scheduler
     optimizer: torch.optim.Optimizer
         Optimizer to schedule
-    *args & **kwargs:
+    *args & **kwargs: _
         parameters for the scheduler
 
     Returns
