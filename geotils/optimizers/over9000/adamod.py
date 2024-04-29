@@ -6,7 +6,7 @@ from torch.optim import Optimizer
 class AdaMod(Optimizer):
     r"""
     Implements AdaMod algorithm with Decoupled Weight Decay (arxiv.org/abs/1711.05101)
-    It has been proposed in `Adaptive and Momental Bounds for Adaptive Learning Rate Methods`_.
+    It has been proposed in 'Adaptive and Momental Bounds for Adaptive Learning Rate Methods'_.
     
     Attributes  
     ----------

@@ -50,14 +50,18 @@ def get_scheduler(name :str, optimizer :torch.optim.Optimizer, **kwargs) -> LRSc
     """
     This function returns the scheduler given its name
 
-    @param name: name of the scheduler
-    @param params: Optimeizer to schedule
-    @param **kwargs:named parameters for the sheduler
+    Parameters
+    ----------
+    name: str
+        name of the scheduler
+    optimizer: torch.optim.Optimizer
+        Optimizer to schedule
+    *args & **kwargs:
+        parameters for the scheduler
 
-    @type name:str
-    @type optimizer: torch.optim.Optimizer
-    
-    @return: torch.optim.lr_scheduler.LRScheduler
+    Returns
+    -------
+    torch.optim.lr_scheduler.LRScheduler
 
     """
     name = name.lower()

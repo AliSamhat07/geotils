@@ -33,14 +33,18 @@ def get_optimizer(name:str ,params,lookAhead=False,lookAhead_alpha=0.5, lookAhea
     r"""
     This function returns the optimizer given its name
 
-    @param name: name of the optimzer
-    @param params: parameters of the model that need to be optimzed 
-    @param *args & **kwargs: parameters for the optimizer
+    Parameters
+    ----------
+    name: str
+        name of the optimzer
+    params: list or dict
+        parameters of the model that need to be optimzed 
+    *args & **kwargs:
+        parameters for the optimizer
 
-    @type name:str
-    @type params: list or dict
-    
-    @return: torch.optim.Optimzer
+    Returns
+    -------
+    torch.optim.Optimzer
 
     """
     name = name.lower()

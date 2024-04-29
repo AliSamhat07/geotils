@@ -25,11 +25,13 @@ class AdamW(Optimizer):
         super(AdamW, self).__init__(params, defaults)
 
     def step(self, closure=None):
-        """Performs a single optimization step.
+        """
+        Performs a single optimization step.
+
         Parameters
         ----------
-        closure (callable, optional): A closure that reevaluates the model
-            and returns the loss.
+        closure (callable, optional):
+            A closure that reevaluates the model and returns the loss.
         """
         loss = None
         if closure is not None:

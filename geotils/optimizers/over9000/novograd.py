@@ -19,7 +19,7 @@ import math
 class AdamW(Optimizer):
     """Implements AdamW algorithm.
   
-    It has been proposed in `Adam: A Method for Stochastic Optimization`_.
+    It has been proposed in 'Adam: A Method for Stochastic Optimization'_.
   
     Attributes:
         params (iterable): iterable of parameters to optimize or dicts defining
@@ -31,7 +31,7 @@ class AdamW(Optimizer):
             numerical stability (default: 1e-8)
         weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
         amsgrad (boolean, optional): whether to use the AMSGrad variant of this
-            algorithm from the paper `On the Convergence of Adam and Beyond`_
+            algorithm from the paper 'On the Convergence of Adam and Beyond'_
   
         Adam: A Method for Stochastic Optimization:
         https://arxiv.org/abs/1412.6980
@@ -130,7 +130,7 @@ class Novograd(Optimizer):
         weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
         grad_averaging: gradient averaging
         amsgrad (boolean, optional): whether to use the AMSGrad variant of this
-            algorithm from the paper `On the Convergence of Adam and Beyond`_
+            algorithm from the paper 'On the Convergence of Adam and Beyond'_
             (default: False)
     """
 
