@@ -28,7 +28,7 @@ except ModuleNotFoundError as e:
 class Lamb(Optimizer):
     r"""Implements Lamb algorithm.
 
-    It has been proposed in `Large Batch Optimization for Deep Learning: Training BERT in 76 minutes`_.
+    It has been proposed in 'Large Batch Optimization for Deep Learning: Training BERT in 76 minutes'_.
 
     Attributes:
         params (iterable): iterable of parameters to optimize or dicts defining

@@ -55,7 +55,7 @@ def get_scheduler(name :str, optimizer :torch.optim.Optimizer, **kwargs) -> LRSc
         name of the scheduler
     optimizer: torch.optim.Optimizer
         Optimizer to schedule
-    *args & **kwargs: _
+    args & kwargs: _
         parameters for the scheduler
 
     Returns
@@ -92,7 +92,7 @@ class AutoScheduler:
             @param data_loader: (optional) used to find the iters_per_epoch
             @param total_epochs: (optional)
             @param iters_per_epoch: (optional)
-            @param **kwargs:named parameters for the sheduler
+            @param kwargs:named parameters for the sheduler
 
             @type name:str
             @type optimizer: torch.optim.Optimizer
