@@ -519,3 +519,5 @@ def get_cm_data():
     cm_data_std = cm_data.std(axis=-1)
     cm_data = cm_data[cm_data_std >= 0.11,:]
     return cm_data
+
+print(get_cm_data())
