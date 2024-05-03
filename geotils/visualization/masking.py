@@ -1,3 +1,7 @@
+import numpy as np
+from color_map import get_cm_data
+import random 
+
 #visualization utils
 def mask2rgb(mask,max_value=1.0):
     shape = mask.shape
@@ -31,7 +35,7 @@ def overlay_rgb_mask(img,mask,sel,alpha):
     img[sel,:] = img[sel,:] * (1.0 - alpha) + mask[sel,:] * alpha
     return img
 
-def overlay_instances_mask(img,instances,cmap,alpha=0.9):
+def overlay_instances_mask(img,instances,cmap=get_cm_data(),alpha=0.9):
     h,w = img.shape[:2]
     overlay = np.zeros((h,w,3),dtype=np.float32)
 
