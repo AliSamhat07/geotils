@@ -12,13 +12,6 @@ geotils.data\_processing.augmentation module
    :undoc-members:
    :show-inheritance:
 
-geotils.data\_processing.color\_map module
-------------------------------------------
-
-.. automodule:: geotils.data_processing.color_map
-   :members:
-   :undoc-members:
-   :show-inheritance:
 
 geotils.data\_processing.cropping module
 ----------------------------------------
