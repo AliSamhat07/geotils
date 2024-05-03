@@ -516,7 +516,7 @@ def get_cm_data():
             [ 0.95588623, 0.91961077, 0.95812116]
     ]
     cm_data = array(cm_data)
-    cm_data_std = cm_data.std(axis=-1)
+    cm_data_std:float = cm_data.std(axis=-1)
     cm_data = cm_data[cm_data_std >= 0.11,:]
     return cm_data
 
