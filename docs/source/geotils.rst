@@ -13,6 +13,7 @@ Subpackages
    geotils.optimizers
    geotils.schedulers
    geotils.visualization
+   geotils.evaluation
 
 Module contents
 ---------------
