@@ -234,7 +234,7 @@ class CalScores:
         plt.imshow(image)
         show_mask(mask_tile, plt.gca(), random_color=False)
         if input_point is not None:
-            show_points(input_point.cpu(), input_label.cpu(), plt.gca())
+            show_points(input_point.cpu(),  input_label.cpu(), plt.gca())
         for box in tile_boxes:
             show_box(box,plt.gca())
         

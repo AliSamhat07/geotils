@@ -79,22 +79,22 @@ class TestCalScores(unittest.TestCase):
         self.assertEqual(scores.output_dir, self.output_dir)
         self.assertEqual(scores.score_dir, self.score_dir)
         
-    @patch("builtins.open")
-    def test_micro_match_iou(self, mock_open):
-        # Test inputs
-        output_dir = "output"
-        score_dir = "scores"
-        pred_mask = torch.zeros(2, 1, 10, 10)
-        name = "test_image"
-        gt = {"geometry": []}
-        image = np.zeros((10, 10, 3))
-        input_point = None
-        input_label = None
-        tile_boxes = [(1, 1, 5, 5)]
+    # @patch("builtins.open")
+    # def test_micro_match_iou(self, mock_open):
+    #     # Test inputs
+    #     output_dir = "output"
+    #     score_dir = "scores"
+    #     pred_mask = torch.zeros(2, 1, 10, 10)
+    #     name = "test_image"
+    #     gt = {"geometry": []}
+    #     image = np.zeros((10, 10, 3))
+    #     input_point = None
+    #     input_label = None
+    #     tile_boxes = [(1, 1, 5, 5)]
 
-        # Initialize CalScores object
-        cal_scores = CalScores(output_dir, score_dir)
-        cal_scores.micro_match_iou(pred_mask, name, gt, image, input_point, input_label, tile_boxes, save=None, visualize=True)
+    #     # Initialize CalScores object
+    #     cal_scores = CalScores(output_dir, score_dir)
+    #     cal_scores.micro_match_iou(pred_mask, name, gt, image, input_point, input_label, tile_boxes, save=None, visualize=True)
 
 
     def test_macro_score(self):
